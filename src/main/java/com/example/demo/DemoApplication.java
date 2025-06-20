@@ -31,6 +31,7 @@ public class DemoApplication implements CommandLineRunner {
 		Category c1 = new Category(null, "Mobile");
 		Category c2 = new Category(null, "Computers");
 		Category c3 = new Category(null, "Electronics");
+		categoryRepository.saveAll(Arrays.asList(c1, c2, c3));
 
 		Product p1 = new Product(null, "P1");
 		Product p2 = new Product(null, "P2");
